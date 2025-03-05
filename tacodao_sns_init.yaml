@@ -163,6 +163,6 @@ Swap:
         interval: 1 week
 
 
-    duration: 9 days
+    duration: 7 days
 
     neurons_fund_participation: true
