@@ -49,8 +49,14 @@ fallback_controller_principals:
 
 
 dapp_canisters:
-
-    - YOUR_CANISTER_ID
+    #DAO canister
+    - ywhqf-eyaaa-aaaad-qg6tq-cai
+    #SNS snapshot canister
+    - zvlzd-qaaaa-aaaad-qg6va-cai
+    #Trading canister
+    - z4is7-giaaa-aaaad-qg6uq-cai
+    #Mint vault canister
+    - z3jul-lqaaa-aaaad-qg6ua-cai
 
 Token:
 
