@@ -57,6 +57,8 @@ dapp_canisters:
     - z4is7-giaaa-aaaad-qg6uq-cai
     #Mint vault canister
     - z3jul-lqaaa-aaaad-qg6ua-cai
+    #ICRC treasury
+    - 2fytf-maaaa-aaaad-qg65a-cai 
 
 Token:
 
