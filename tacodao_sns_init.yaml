@@ -1,6 +1,8 @@
+# --------------------------------------------
+# 🌮 TACO DAO - Together we perfect the recipe
+# --------------------------------------------
 
 name: TACO DAO
-
 
 description: >
     The TACO DAO introduces a transformative approach to digital asset 
@@ -9,90 +11,89 @@ description: >
     and stable management strategy. This innovative model not only encourages market 
     adaptability but cultivates a learning environment where both novice and seasoned 
     DAO members gain insights through collaborative decision-making, leading to 
-    sustainable, long-term growth in the volatile world of cryptocurrency. 
+    sustainable, long-term growth in the volatile world of cryptocurrency.
 
+Principals: []    
 
 logo: logo.png
-
 
 url: https://tacodao.com
 
 NnsProposal:
    
     title: "NNS Proposal to create an SNS named 'TACO DAO'"
-
    
     url: "https://forum.dfinity.org/t/upcoming-taco-dao-sns-decentralization-swap/41987"
 
+    summary: |
+        ## Taco DAO SNS
+        Proposal to create an SNS for Taco DAO.
 
-    summary: >
-        Proposal to create an SNS - TACO DAO.
-    The SNS will be initialized with the following settings:
-    Total 7 777 777 TACO
-    Neuron fund participation Yes - matched funding
-    Treasury 3 679 703 TACO
-    2 048 408 TACO for developers & seed
-    Tokens Distributed to Participants 2 049 666 TACO
-    Minimum direct participation 100 000 ICP
-    Maximum direct participation 500 000 ICP
-    Minimum participation per entity 1 ICP
-    Maximum participation per entity 200 000 ICP
-    Min dissolve delay 1 week
-    Max dissolve delay 1 month
-    Voting Rewards 0%
-    Neuron basket 5 neuron basket 1 week interval
+        ## The SNS will be initialized with the following parameters:
+        * TACO total supply at genesis: 7_777_777 TACO
+        * Treasury 3_679_703 TACO
+        * Tokens Distributed to Participants 2_049_666 TACO
+        * Tokens for developers & seed 2_048_408 TACO
+        * ICP to raise min: 100_000 ICP
+        * ICP to raise max: 500_000 ICP
+        * Neuron fund participating - matched funding
+        * Min number of tokens per contributor: 1 ICP
+        * Max number of tokens per contributor: 200_000 ICP
+        * Min number of participants: 20
+        * Min dissolve delay: 1 week
+        * Max dissolve delay: 1 month
+        * Voting rewards: 0%
+        * Neuron basket: 5 neuron basket 1 week interval
 
+        ## Learn more
+        * [Taco DAO website](https://tacodao.com/)
+        * [Taco DAO whitepaper](https://tacodao.com/)
+        * [Taco DAO on X](https://x.com/tacodaoicp)
+        * [Taco DAO on OC](https://oc.app/community/lizfz-ryaaa-aaaar-bagsa-cai/channel/1733722051)
+        * [Taco DAO on Nuance](https://nuance.xyz/user/tacodao)
+        * [Taco DAO on Taggr](https://taggr.link/#/user/4914)
+        * [Taco DAO on Github](https://github.com/tacodaoicp)
 
 fallback_controller_principals:
-
     - llfag-3kg4c-3kitv-fz3kg-xia7l-ya4u6-u577s-hzm7x-o2pdr-likn5-lqe
 
-
 dapp_canisters:
-    #DAO canister
+    # DAO canister
     - ywhqf-eyaaa-aaaad-qg6tq-cai
-    #SNS snapshot canister
+    # SNS snapshot canister
     - zvlzd-qaaaa-aaaad-qg6va-cai
-    #Trading canister
+    # Trading canister
     - z4is7-giaaa-aaaad-qg6uq-cai
-    #Mint vault canister
+    # Mint vault canister
     - z3jul-lqaaa-aaaad-qg6ua-cai
-    #ICRC treasury
+    # ICRC treasury
     - 2fytf-maaaa-aaaad-qg65a-cai 
 
 Token:
 
     name: TACO DAO Token
 
-
     symbol: TACO
 
     transaction_fee: 10_000 e8s
 
-
     logo: logo.png
-
 
 Proposals:
 
     rejection_fee: 77 tokens
 
-
     initial_voting_period: 4 days
 
-
     maximum_wait_for_quiet_deadline_extension: 12 hours
-
 
 Neurons:
 
     minimum_creation_stake: 1 token
 
-
 Voting:
 
     minimum_dissolve_delay: 1 week
-
 
     MaximumVotingPowerBonuses:
 
@@ -102,750 +103,745 @@ Voting:
     
             bonus: 0%
 
-
-        Age: 0%
+        Age:
     
             duration: 0 years
       
             bonus: 0%
-
     
     RewardRate:
 
         initial: 0%
 
-
         final: 0%
 
-
         transition_duration: 0 years
-
 
 Distribution:
 
     Neurons:
    
- - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder1
           dissolve_delay: 1 month
           vesting_period: 0
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder2
           dissolve_delay: 1 month
           vesting_period: 2 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder3
           dissolve_delay: 1 month
           vesting_period: 5 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder4
           dissolve_delay: 1 month
           vesting_period: 8 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder5
           dissolve_delay: 1 month
           vesting_period: 11 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder6
           dissolve_delay: 1 month
           vesting_period: 14 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder7
           dissolve_delay: 1 month
           vesting_period: 17 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+         - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder8
           dissolve_delay: 1 month
           vesting_period: 20 months
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 38383.5264 tokens
           memo: founder9
           dissolve_delay: 1 month
           vesting_period: 23 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder10
           dissolve_delay: 1 month
           vesting_period: 0
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder11
           dissolve_delay: 1 month
           vesting_period: 2 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder12
           dissolve_delay: 1 month
           vesting_period: 5 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder13
           dissolve_delay: 1 month
           vesting_period: 8 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder14
           dissolve_delay: 1 month
           vesting_period: 11 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder15
           dissolve_delay: 1 month
           vesting_period: 14 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder16
           dissolve_delay: 1 month
           vesting_period: 17 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder17
           dissolve_delay: 1 month
           vesting_period: 20 months
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 38517.6667 tokens
           memo: founder18
           dissolve_delay: 1 month
           vesting_period: 23 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder19
           dissolve_delay: 1 month
           vesting_period: 0
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder20
           dissolve_delay: 1 month
           vesting_period: 2 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder21
           dissolve_delay: 1 month
           vesting_period: 5 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder22
           dissolve_delay: 1 month
           vesting_period: 8 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder23
           dissolve_delay: 1 month
           vesting_period: 11 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder24
           dissolve_delay: 1 month
           vesting_period: 14 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder25
           dissolve_delay: 1 month
           vesting_period: 17 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder26
           dissolve_delay: 1 month
           vesting_period: 20 months
 
-          - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
+        - principal: vrufp-cpibm-w6oja-wge3x-suodi-kohf3-walgv-ieywu-52fdx-ccrkq-lqe
           stake:  36291.9529 tokens
           memo: founder27
           dissolve_delay: 1 month
           vesting_period: 23 months
 
-          - principal: 6lrxa-2ndwl-qhzbc-ioyy4-xiz6m-ix4by-3keek-mnybf-maa2a-4uiwt-tqe
+        - principal: 6lrxa-2ndwl-qhzbc-ioyy4-xiz6m-ix4by-3keek-mnybf-maa2a-4uiwt-tqe
           stake: 155555 tokens
           memo: frontend
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 5rxbf-uplpq-gpnkg-kl2fd-6i67g-mzb7t-7zxip-gxzpf-o3woh-bryy5-aqe
+        - principal: 5rxbf-uplpq-gpnkg-kl2fd-6i67g-mzb7t-7zxip-gxzpf-o3woh-bryy5-aqe
           stake: 39845.6 tokens
           memo: art
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: jrnhz-6ekxv-2fffs-wfcgt-l3pe7-456id-heznf-xyf64-nykjq-4jyso-zae
+        - principal: jrnhz-6ekxv-2fffs-wfcgt-l3pe7-456id-heznf-xyf64-nykjq-4jyso-zae
           stake: 37931.4 tokens
           memo: airdrop
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: plehf-mi52t-3z3z6-odb6v-y6tfm-pijvz-ji7th-uslpf-gwwon-k7sfn-gae
+        - principal: plehf-mi52t-3z3z6-odb6v-y6tfm-pijvz-ji7th-uslpf-gwwon-k7sfn-gae
           stake: 15000 tokens
           memo: advisor1
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xcdmb-5s24s-xuxsr-tglqd-stufc-dzs5z-izgv3-kuefn-xdbda-xdi4o-kqe
+        - principal: xcdmb-5s24s-xuxsr-tglqd-stufc-dzs5z-izgv3-kuefn-xdbda-xdi4o-kqe
           stake: 15000 tokens
           memo: advisor2
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: f3qow-odbkr-eyqs7-3mqnc-nvlhp-vx4rt-bbm7r-zardu-bawaw-jzkl6-rqe
+        - principal: f3qow-odbkr-eyqs7-3mqnc-nvlhp-vx4rt-bbm7r-zardu-bawaw-jzkl6-rqe
           stake: 15000 tokens
           memo: advisor3
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 4ekhm-2azh6-wfdvl-s63w4-jg4g7-r7mu5-pc5jx-i6qju-fw3me-7okgf-jae
+        - principal: 4ekhm-2azh6-wfdvl-s63w4-jg4g7-r7mu5-pc5jx-i6qju-fw3me-7okgf-jae
           stake: 15000 tokens
           memo: advisor4
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: niyvd-koeyo-ddtyu-mgfwy-zrqae-o2yt3-pw5h2-nvv6p-tnqih-o56f2-oqe
+        - principal: niyvd-koeyo-ddtyu-mgfwy-zrqae-o2yt3-pw5h2-nvv6p-tnqih-o56f2-oqe
           stake: 5000 tokens
           memo: advisor5
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: w7po2-i7huw-m3whk-kc6hd-a5tw6-imqck-gybco-z2ra5-deeec-y7anu-fae
+        - principal: w7po2-i7huw-m3whk-kc6hd-a5tw6-imqck-gybco-z2ra5-deeec-y7anu-fae
           stake: 5000 tokens
           memo: advisor6
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 7egl7-eu5ec-bcmoq-eymum-6nkjc-vlyvh-j54i2-olukc-psyk5-afj4d-2qe
+        - principal: 7egl7-eu5ec-bcmoq-eymum-6nkjc-vlyvh-j54i2-olukc-psyk5-afj4d-2qe
           stake: 7777 tokens
           memo: advisor7
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xgid6-47muo-sqfb3-ca73y-5v7n2-2xxik-6js2n-wexwz-efvti-gxpgd-xqe
+        - principal: xgid6-47muo-sqfb3-ca73y-5v7n2-2xxik-6js2n-wexwz-efvti-gxpgd-xqe
           stake: 5000 tokens
           memo: advisor8
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: rx5m5-lpsbs-fskeb-62sf3-q3e5u-tvt6n-rgvnv-ri253-3c5je-mti7b-kae
+        - principal: rx5m5-lpsbs-fskeb-62sf3-q3e5u-tvt6n-rgvnv-ri253-3c5je-mti7b-kae
           stake: 5000 tokens
           memo: advisor9
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 7ohni-sbpse-y327l-syhzk-jn6n4-hw277-erei5-xhkjr-lbh6b-rjqei-sqe
+        - principal: 7ohni-sbpse-y327l-syhzk-jn6n4-hw277-erei5-xhkjr-lbh6b-rjqei-sqe
           stake: 3007.7 tokens
           memo: advisor10
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 6vebh-fjo2x-hd5ye-h43q3-onocw-riv37-cb6bb-bpmjc-aiyb7-er2ph-nae
+        - principal: 6vebh-fjo2x-hd5ye-h43q3-onocw-riv37-cb6bb-bpmjc-aiyb7-er2ph-nae
           stake: 3007.7 tokens
           memo: advisor11
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: mqirh-3biw7-id5dy-zcul7-6bvbc-itpdf-y5jbz-yp6af-qriid-5ltfv-yae
+        - principal: mqirh-3biw7-id5dy-zcul7-6bvbc-itpdf-y5jbz-yp6af-qriid-5ltfv-yae
           stake: 3007.7 tokens
           memo: advisor12
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 3l3v5-qmwj6-mm7me-qgess-ri4yv-otnjj-jfmzb-zmkrk-nf4r2-nooit-cae
+        - principal: 3l3v5-qmwj6-mm7me-qgess-ri4yv-otnjj-jfmzb-zmkrk-nf4r2-nooit-cae
           stake: 3007.7 tokens
           memo: advisor13
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: lqgbw-mdx3n-u2xgk-fidum-fwpaz-kyv6u-cd5y7-suj3u-jzjc7-ajj5j-iae
+        - principal: lqgbw-mdx3n-u2xgk-fidum-fwpaz-kyv6u-cd5y7-suj3u-jzjc7-ajj5j-iae
           stake: 3007.7 tokens
           memo: advisor14
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: gbuwc-xrwtz-f4xiq-5zsmr-a5d2x-r5pbz-rexip-r4jgs-lz6u6-wnin3-zqe
+        - principal: gbuwc-xrwtz-f4xiq-5zsmr-a5d2x-r5pbz-rexip-r4jgs-lz6u6-wnin3-zqe
           stake: 3007.7 tokens
           memo: advisor15
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: drncv-oubne-4wzdj-mecj3-7aut7-pm6pa-bq3ac-supyi-ic4xt-dk3zv-fqe
+        - principal: drncv-oubne-4wzdj-mecj3-7aut7-pm6pa-bq3ac-supyi-ic4xt-dk3zv-fqe
           stake: 3007.7 tokens
           memo: advisor16
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: c4ni6-b5ugz-jpt5j-igssn-o4bxh-tk7bn-cloc2-dgark-ncrgj-zougg-yqe
+        - principal: c4ni6-b5ugz-jpt5j-igssn-o4bxh-tk7bn-cloc2-dgark-ncrgj-zougg-yqe
           stake: 3007.7 tokens
           memo: advisor17
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: ooljm-hfaby-5gi7m-abj6k-ooufi-ncz2m-nzztf-xfpce-q2jmx-nzecl-xqe
+        - principal: ooljm-hfaby-5gi7m-abj6k-ooufi-ncz2m-nzztf-xfpce-q2jmx-nzecl-xqe
           stake: 3007.7 tokens
           memo: advisor18
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: maal5-cbpad-knw2p-tr2d7-huysl-o5spi-w6rmj-r4b23-ahcvd-toayt-gqe
+        - principal: maal5-cbpad-knw2p-tr2d7-huysl-o5spi-w6rmj-r4b23-ahcvd-toayt-gqe
           stake: 3007.7 tokens
           memo: advisor19
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 23jeh-d4pjo-r2biy-e6hrf-tgo36-xqjrg-kkk5h-lmw7p-rch6o-rz2aa-xqe
+        - principal: 23jeh-d4pjo-r2biy-e6hrf-tgo36-xqjrg-kkk5h-lmw7p-rch6o-rz2aa-xqe
           stake: 64.339 tokens
           memo: preswap1
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 27vqm-f7gca-wl3wg-l4jpo-nk5qy-ilno5-dbul4-o2dtm-lx47t-p3mss-hqe
+        - principal: 27vqm-f7gca-wl3wg-l4jpo-nk5qy-ilno5-dbul4-o2dtm-lx47t-p3mss-hqe
           stake: 54.49 tokens
           memo: preswap2
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 2wmby-gko3z-xfjgi-uv57e-fxcgp-ud4i6-7mzx6-ppsqz-fiun2-2i6lw-gqe
+        - principal: 2wmby-gko3z-xfjgi-uv57e-fxcgp-ud4i6-7mzx6-ppsqz-fiun2-2i6lw-gqe
           stake: 3218.507 tokens
           memo: preswap3
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 3anjr-llocx-dp2gc-3tmrr-jw72g-t5iuj-lxu3d-actqu-r2zea-duwtq-gae
+        - principal: 3anjr-llocx-dp2gc-3tmrr-jw72g-t5iuj-lxu3d-actqu-r2zea-duwtq-gae
           stake: 1752.752 tokens
           memo: preswap4
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 3cey4-x5hdl-6ar47-vzvne-bcgig-wbzih-e5bqe-r6nqc-ld362-xpo5o-6qe
+        - principal: 3cey4-x5hdl-6ar47-vzvne-bcgig-wbzih-e5bqe-r6nqc-ld362-xpo5o-6qe
           stake: 3474.477 tokens
           memo: preswap5
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 3fzac-spyl6-7s5ez-pmbrz-43lpv-vdiqs-ifg4w-j6fr6-jw3hc-7cs4g-oae
+        - principal: 3fzac-spyl6-7s5ez-pmbrz-43lpv-vdiqs-ifg4w-j6fr6-jw3hc-7cs4g-oae
           stake: 1072.192 tokens
           memo: preswap6
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 55zes-vjwak-gvak7-fujom-m5rbn-bzzpm-uceeq-37kwq-uhtrn-gfs7a-xqe
+        - principal: 55zes-vjwak-gvak7-fujom-m5rbn-bzzpm-uceeq-37kwq-uhtrn-gfs7a-xqe
           stake: 22.562 tokens
           memo: preswap7
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 5eqqt-dn7z5-ygt22-qwqgq-odbia-monel-xrbcl-dma6f-azblt-5vjao-vae
+        - principal: 5eqqt-dn7z5-ygt22-qwqgq-odbia-monel-xrbcl-dma6f-azblt-5vjao-vae
           stake: 78.436 tokens
           memo: preswap8
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 6fr5a-2yplr-mhopt-s2nm3-6g6pf-iilmu-tlbcm-mtqiq-rl36j-u7zdz-lae
+        - principal: 6fr5a-2yplr-mhopt-s2nm3-6g6pf-iilmu-tlbcm-mtqiq-rl36j-u7zdz-lae
           stake: 48.246 tokens
           memo: preswap9
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 6lrxa-2ndwl-qhzbc-ioyy4-xiz6m-ix4by-3keek-mnybf-maa2a-4uiwt-tqe
+        - principal: 6lrxa-2ndwl-qhzbc-ioyy4-xiz6m-ix4by-3keek-mnybf-maa2a-4uiwt-tqe
           stake: 289.636 tokens
           memo: preswap10
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 6pboj-hqydn-rcw4e-hbfvf-z4ry6-lfhae-hif5i-xyhjk-f3sx6-opu6i-5qe
+        - principal: 6pboj-hqydn-rcw4e-hbfvf-z4ry6-lfhae-hif5i-xyhjk-f3sx6-opu6i-5qe
           stake: 1687.126 tokens
           memo: preswap11
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: 7cde5-5jf43-ilqvi-7fzck-dr3yi-mkqzs-jmgk3-6rkqu-fwfxa-grlqy-jae
+        - principal: 7cde5-5jf43-ilqvi-7fzck-dr3yi-mkqzs-jmgk3-6rkqu-fwfxa-grlqy-jae
           stake: 2574.831 tokens
           memo: preswap12
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: a7fmp-cphq4-zsogk-t6geo-kl5i2-aiwo5-5as3v-6ajmf-dcbf4-swk4s-nae
+        - principal: a7fmp-cphq4-zsogk-t6geo-kl5i2-aiwo5-5as3v-6ajmf-dcbf4-swk4s-nae
           stake: 52.462 tokens
           memo: preswap13
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: akt5s-36ibp-4mr4j-nbhke-lhobx-plyew-akltb-j7o4b-km5a3-4ahfk-7qe
+        - principal: akt5s-36ibp-4mr4j-nbhke-lhobx-plyew-akltb-j7o4b-km5a3-4ahfk-7qe
           stake: 3218.539 tokens
           memo: preswap14
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: avvcg-57xqm-y237l-72e5a-nkjqc-rldvf-f4sqf-guqyc-ftyvz-ynkvq-aae
+        - principal: avvcg-57xqm-y237l-72e5a-nkjqc-rldvf-f4sqf-guqyc-ftyvz-ynkvq-aae
           stake: 3218.539 tokens
           memo: preswap15
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: bk5xz-35tcj-xreap-v2k2c-qfb5s-ebqts-pgbzt-jgurm-sm37j-dzt3n-qae
+        - principal: bk5xz-35tcj-xreap-v2k2c-qfb5s-ebqts-pgbzt-jgurm-sm37j-dzt3n-qae
           stake: 8046.315 tokens
           memo: preswap16
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: bkvir-7x7is-fq7oc-wt2ww-bd5cj-cqcxd-7v4oz-cqgvu-6igrm-hdwyh-kqe
+        - principal: bkvir-7x7is-fq7oc-wt2ww-bd5cj-cqcxd-7v4oz-cqgvu-6igrm-hdwyh-kqe
           stake: 112.649 tokens
           memo: preswap17
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: bl27y-zbrn3-x5uqq-jjioh-5huze-wrc7w-xojq2-lmiz2-zhmjh-kask7-cae
+        - principal: bl27y-zbrn3-x5uqq-jjioh-5huze-wrc7w-xojq2-lmiz2-zhmjh-kask7-cae
           stake: 78.371 tokens
           memo: preswap18
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: d5jbw-krtiv-v5xi4-jj6cf-53euc-vlcbd-u73lb-wlwdj-a5ijb-evlu4-qqe
+        - principal: d5jbw-krtiv-v5xi4-jj6cf-53euc-vlcbd-u73lb-wlwdj-a5ijb-evlu4-qqe
           stake: 49.533 tokens
           memo: preswap19
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: da75w-jugs2-msyl4-axbqa-ikp2t-ynw5z-2fa5s-4aanh-vc7pq-wsx3p-4qe
+        - principal: da75w-jugs2-msyl4-axbqa-ikp2t-ynw5z-2fa5s-4aanh-vc7pq-wsx3p-4qe
           stake: 541.712 tokens
           memo: preswap20
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
+        - principal: dew4p-qrten-wh6kq-5cf2b-iccms-7sddu-n2tb2-h7ya4-smfl5-b3xvr-vae
           stake: 70807.885 tokens
           memo: preswap21
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: dhr23-lj7p6-o4hkt-eit2h-zeeq3-utkap-44s5j-i2iii-aq3vg-a5mw7-iae
+        - principal: dhr23-lj7p6-o4hkt-eit2h-zeeq3-utkap-44s5j-i2iii-aq3vg-a5mw7-iae
           stake: 195.494 tokens
           memo: preswap22
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: dhuwx-kqlto-bb5dp-2kspf-synyx-ob5mp-d3lm2-4drxb-vuyqz-ngacb-xae
+        - principal: dhuwx-kqlto-bb5dp-2kspf-synyx-ob5mp-d3lm2-4drxb-vuyqz-ngacb-xae
           stake: 1995.494 tokens
           memo: preswap23
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: du2hj-tshoj-jbjx4-mwky6-omtlq-d3jco-ezipl-bspok-4q266-nok3f-pae
+        - principal: du2hj-tshoj-jbjx4-mwky6-omtlq-d3jco-ezipl-bspok-4q266-nok3f-pae
           stake: 64.371 tokens
           memo: preswap24
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: fiwvk-zuqh4-g76jn-qrvoy-7o5gt-bmher-2t3w7-tjitw-nfva4-zz76e-vqe
+        - principal: fiwvk-zuqh4-g76jn-qrvoy-7o5gt-bmher-2t3w7-tjitw-nfva4-zz76e-vqe
           stake: 321.854 tokens
           memo: preswap25
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: fywqa-zjhpp-bq2pt-jffa7-uj6rd-oeekx-vzxau-vgwx5-q3csk-mkchj-2qe
+        - principal: fywqa-zjhpp-bq2pt-jffa7-uj6rd-oeekx-vzxau-vgwx5-q3csk-mkchj-2qe
           stake: 7241.68 tokens
           memo: preswap26
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: gw2tx-okzsj-guu5h-gwrxn-fxcln-llxem-jq72l-l5s6l-5ecso-vp6it-2qe
+        - principal: gw2tx-okzsj-guu5h-gwrxn-fxcln-llxem-jq72l-l5s6l-5ecso-vp6it-2qe
           stake: 965.562 tokens
           memo: preswap27
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: h2x7q-tcgpl-ucfmu-25elq-k6w2g-x66ys-qdpup-gq2as-a53gz-3xqkk-zqe
+        - principal: h2x7q-tcgpl-ucfmu-25elq-k6w2g-x66ys-qdpup-gq2as-a53gz-3xqkk-zqe
           stake: 160.927 tokens
           memo: preswap28
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: hwhf2-rnn6m-grlmk-zc3sv-5retg-jbvln-34b7z-dfseq-uhr4k-z6qyh-iqe
+        - principal: hwhf2-rnn6m-grlmk-zc3sv-5retg-jbvln-34b7z-dfseq-uhr4k-z6qyh-iqe
           stake: 440.393 tokens
           memo: preswap29
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: hxdpn-hxyoy-em7uq-73yoz-fcese-vwdzn-fcdtu-p746p-e3fkm-rxnhk-cqe
+        - principal: hxdpn-hxyoy-em7uq-73yoz-fcese-vwdzn-fcdtu-p746p-e3fkm-rxnhk-cqe
           stake: 321.854 tokens
           memo: preswap30
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: hzvyx-jcnle-d6hhi-fu45u-pg37d-zwl7x-suwjt-cxq22-yabqt-dyfkn-lae
+        - principal: hzvyx-jcnle-d6hhi-fu45u-pg37d-zwl7x-suwjt-cxq22-yabqt-dyfkn-lae
           stake: 32.121 tokens
           memo: preswap31
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: jlnim-ndomu-4hl3t-r6o7p-pkm5l-cttwg-rists-selxo-gjjxp-p4icb-3qe
+        - principal: jlnim-ndomu-4hl3t-r6o7p-pkm5l-cttwg-rists-selxo-gjjxp-p4icb-3qe
           stake: 9.205 tokens
           memo: preswap32
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: kijn6-5ymv2-ydbe4-zpl7f-qhqqa-jyisr-gclsj-dcssk-lhvjx-waftf-xae
+        - principal: kijn6-5ymv2-ydbe4-zpl7f-qhqqa-jyisr-gclsj-dcssk-lhvjx-waftf-xae
           stake: 27.873 tokens
           memo: preswap33
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: kw4sb-dhue6-xjrjw-bda5p-cks2x-gx4g7-5a556-6hmye-wugaj-7fnlp-sae
+        - principal: kw4sb-dhue6-xjrjw-bda5p-cks2x-gx4g7-5a556-6hmye-wugaj-7fnlp-sae
           stake: 64.339 tokens
           memo: preswap34
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: kzbxd-boy4u-lqwho-n5pdb-ryqbs-fgt3t-zz326-7p3qv-6qrkv-h7fzy-lqe
+        - principal: kzbxd-boy4u-lqwho-n5pdb-ryqbs-fgt3t-zz326-7p3qv-6qrkv-h7fzy-lqe
           stake: 16092.694 tokens
           memo: preswap35
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: ldxgi-yc5wv-nvn5f-njjqy-3van2-crrdf-c435z-43qbv-4czm2-hhblr-tae
+        - principal: ldxgi-yc5wv-nvn5f-njjqy-3van2-crrdf-c435z-43qbv-4czm2-hhblr-tae
           stake: 5088.381 tokens
           memo: preswap36
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: mqirh-3biw7-id5dy-zcul7-6bvbc-itpdf-y5jbz-yp6af-qriid-5ltfv-yae
+        - principal: mqirh-3biw7-id5dy-zcul7-6bvbc-itpdf-y5jbz-yp6af-qriid-5ltfv-yae
           stake: 89354.393 tokens
           memo: preswap37
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: ne7kl-gpbub-bzqox-jepql-fiffs-lltfm-as5vy-3zfnj-m63nc-xlmzm-yqe
+        - principal: ne7kl-gpbub-bzqox-jepql-fiffs-lltfm-as5vy-3zfnj-m63nc-xlmzm-yqe
           stake: 24.783 tokens
           memo: preswap38
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: nhcrb-c6m6o-nkieh-dilkt-rbh2p-clpf3-rlhal-xyeio-4uc4t-fnbau-wqe
+        - principal: nhcrb-c6m6o-nkieh-dilkt-rbh2p-clpf3-rlhal-xyeio-4uc4t-fnbau-wqe
           stake: 31.509 tokens
           memo: preswap39
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: nhy7q-5rxxy-ewb4p-jbf3m-k65jc-oio6v-te3rm-7q46j-vj5qk-ghgmz-zqe
+        - principal: nhy7q-5rxxy-ewb4p-jbf3m-k65jc-oio6v-te3rm-7q46j-vj5qk-ghgmz-zqe
           stake: 2474.348 tokens
           memo: preswap40
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: novsc-cp6nd-sxkze-uow46-jyfvx-msuz2-jc7u5-gidgu-xdwk2-myhi4-nae
+        - principal: novsc-cp6nd-sxkze-uow46-jyfvx-msuz2-jc7u5-gidgu-xdwk2-myhi4-nae
           stake: 657.226 tokens
           memo: preswap41
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: pdhei-a4jbj-ppbeu-tttgi-bztde-nhbo4-ag7gz-ibgyj-mauoh-yj2xs-gqe
+        - principal: pdhei-a4jbj-ppbeu-tttgi-bztde-nhbo4-ag7gz-ibgyj-mauoh-yj2xs-gqe
           stake: 19311.233 tokens
           memo: preswap42
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: peg2s-47dqj-7dnez-bznad-kclyo-rxbc7-oor7s-wc3kx-e5k23-ziivp-oqe
+        - principal: peg2s-47dqj-7dnez-bznad-kclyo-rxbc7-oor7s-wc3kx-e5k23-ziivp-oqe
           stake: 60.154 tokens
           memo: preswap43
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: qh4re-vreux-3p32r-eqhxe-ssudb-335wx-szled-5qj5n-sm2qq-uaafy-aae
+        - principal: qh4re-vreux-3p32r-eqhxe-ssudb-335wx-szled-5qj5n-sm2qq-uaafy-aae
           stake: 71471.773 tokens
           memo: preswap44
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: qjrwc-czcqg-p5sji-abmay-mx4h6-go6w5-jhzur-aqxk6-mmvbb-jteuw-kae
+        - principal: qjrwc-czcqg-p5sji-abmay-mx4h6-go6w5-jhzur-aqxk6-mmvbb-jteuw-kae
           stake: 1577.309 tokens
           memo: preswap45
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: rypm6-ztvpz-aqr5r-4jpsy-gmh53-jwcir-uhjdi-x7x5n-qqmdr-zsmyd-oae
+        - principal: rypm6-ztvpz-aqr5r-4jpsy-gmh53-jwcir-uhjdi-x7x5n-qqmdr-zsmyd-oae
           stake: 1287.576 tokens
           memo: preswap46
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: s2swy-pdmzf-izjde-gi7cq-zttmz-emwkg-5z7ov-jadyg-nrdhv-yuvt2-oqe
+        - principal: s2swy-pdmzf-izjde-gi7cq-zttmz-emwkg-5z7ov-jadyg-nrdhv-yuvt2-oqe
           stake: 311.78 tokens
           memo: preswap47
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: sbmbj-iieo2-orclf-ezqk7-6sa7m-xzays-m2bqs-dvxrm-keccv-4sqpb-xae
+        - principal: sbmbj-iieo2-orclf-ezqk7-6sa7m-xzays-m2bqs-dvxrm-keccv-4sqpb-xae
           stake: 128.581 tokens
           memo: preswap48
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
+        - principal: th65x-be7bq-thkki-clkqi-kpt5z-td2ji-rnz7r-jzk6i-zsj4o-fd3yb-uae
           stake: 64370.776 tokens
           memo: preswap49
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: tqmhw-xn3cw-cr23r-iukbw-ikxuy-e72q7-gjhoh-m6nes-ndvkm-uwuwe-5qe
+        - principal: tqmhw-xn3cw-cr23r-iukbw-ikxuy-e72q7-gjhoh-m6nes-ndvkm-uwuwe-5qe
           stake: 17885.742 tokens
           memo: preswap50
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: ts5dq-faniq-2bn2h-dl6gs-vv3kq-fybtv-mec5r-har4z-7ntf3-hlmq4-eqe
+        - principal: ts5dq-faniq-2bn2h-dl6gs-vv3kq-fybtv-mec5r-har4z-7ntf3-hlmq4-eqe
           stake: 16.994 tokens
           memo: preswap51
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: u5lmu-dvijl-hjww7-webdf-wa5jo-6mkuy-gixvd-g7ris-dkliz-wlp5z-gae
+        - principal: u5lmu-dvijl-hjww7-webdf-wa5jo-6mkuy-gixvd-g7ris-dkliz-wlp5z-gae
           stake: 48.632 tokens
           memo: preswap52
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: udwan-tftk5-lx7ud-nwguf-yevoi-jnkjl-jx73d-rdvyo-x4gkw-5gvdt-gae
+        - principal: udwan-tftk5-lx7ud-nwguf-yevoi-jnkjl-jx73d-rdvyo-x4gkw-5gvdt-gae
           stake: 129.707 tokens
           memo: preswap53
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: urk53-t6zhj-tlbze-taf77-ipjez-dpg3u-32pzb-qt2ma-nu7z7-yrcwl-jqe
+        - principal: urk53-t6zhj-tlbze-taf77-ipjez-dpg3u-32pzb-qt2ma-nu7z7-yrcwl-jqe
           stake: 1609.269 tokens
           memo: preswap54
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: uwpik-bzywz-l7bgr-zjgvi-e4p5w-jx6ht-2kvqj-eqfw3-ztmbv-zhh5w-zae
+        - principal: uwpik-bzywz-l7bgr-zjgvi-e4p5w-jx6ht-2kvqj-eqfw3-ztmbv-zhh5w-zae
           stake: 57.161 tokens
           memo: preswap55
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: vfhdx-67tj7-akypt-6a6fx-yqzlr-3om4p-a7cem-qkozv-76oie-ghfgv-jae
+        - principal: vfhdx-67tj7-akypt-6a6fx-yqzlr-3om4p-a7cem-qkozv-76oie-ghfgv-jae
           stake: 2860.895 tokens
           memo: preswap56
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: zt4aj-3x5qw-aptts-32oqz-2gohw-bwkei-6vnbv-ht3og-ktcr7-2s4bs-cqe
+        - principal: zt4aj-3x5qw-aptts-32oqz-2gohw-bwkei-6vnbv-ht3og-ktcr7-2s4bs-cqe
           stake: 12078.436 tokens
           memo: preswap57
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: vwgrw-6ul3g-dkfxb-bqwgl-7tqnl-qj5gu-dddwr-yqbhl-oexn7-cirgc-bae
+        - principal: vwgrw-6ul3g-dkfxb-bqwgl-7tqnl-qj5gu-dddwr-yqbhl-oexn7-cirgc-bae
           stake: 14304.603 tokens
           memo: preswap58
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: vwj6s-d3xkw-o662o-d32pg-ruywn-t5ju5-qrpq4-4bmam-4flwh-h7iuj-jae
+        - principal: vwj6s-d3xkw-o662o-d32pg-ruywn-t5ju5-qrpq4-4bmam-4flwh-h7iuj-jae
           stake: 1609.269 tokens
           memo: preswap59
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: vxcwu-gomi2-cygro-6urwk-rrsry-rnkxa-cf5dn-4kkoy-p4m42-xfyky-xqe
+        - principal: vxcwu-gomi2-cygro-6urwk-rrsry-rnkxa-cf5dn-4kkoy-p4m42-xfyky-xqe
           stake: 3218.539 tokens
           memo: preswap60
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: wqb4a-vvmv7-zvusl-wbfwl-ofqqm-ajnlw-jz76m-5jpbi-rvfkr-lemtg-cqe
+        - principal: wqb4a-vvmv7-zvusl-wbfwl-ofqqm-ajnlw-jz76m-5jpbi-rvfkr-lemtg-cqe
           stake: 804.635 tokens
           memo: preswap61
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: wti6j-2wasq-s4l3g-wt34m-cpgvz-yv342-r6tmp-rd4wq-hqxbc-5gl7l-rae
+        - principal: wti6j-2wasq-s4l3g-wt34m-cpgvz-yv342-r6tmp-rd4wq-hqxbc-5gl7l-rae
           stake: 2883.135 tokens
           memo: preswap62
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xcdmb-5s24s-xuxsr-tglqd-stufc-dzs5z-izgv3-kuefn-xdbda-xdi4o-kqe
+        - principal: xcdmb-5s24s-xuxsr-tglqd-stufc-dzs5z-izgv3-kuefn-xdbda-xdi4o-kqe
           stake: 71523.045 tokens
           memo: preswap63
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xdrff-dgnfa-tyz6k-pkv4t-6o7ld-coizs-bbkie-3fubh-wiv65-6ppqf-iae
+        - principal: xdrff-dgnfa-tyz6k-pkv4t-6o7ld-coizs-bbkie-3fubh-wiv65-6ppqf-iae
           stake: 250.274 tokens
           memo: preswap64
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xgid6-47muo-sqfb3-ca73y-5v7n2-2xxik-6js2n-wexwz-efvti-gxpgd-xqe
+        - principal: xgid6-47muo-sqfb3-ca73y-5v7n2-2xxik-6js2n-wexwz-efvti-gxpgd-xqe
           stake: 17937.979 tokens
           memo: preswap65
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xpgm6-tejxr-zze2n-uoe3k-2xhp3-qd54f-dyf5t-qt5we-yysbz-7jb45-5ae
+        - principal: xpgm6-tejxr-zze2n-uoe3k-2xhp3-qd54f-dyf5t-qt5we-yysbz-7jb45-5ae
           stake: 965.562 tokens
           memo: preswap66
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xuvka-t2ead-dsqhi-beknk-lbmbz-th73q-26oib-bfa4k-5nowc-3ozuo-5qe
+        - principal: xuvka-t2ead-dsqhi-beknk-lbmbz-th73q-26oib-bfa4k-5nowc-3ozuo-5qe
           stake: 102993.241 tokens
           memo: preswap67
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: xvfo2-6jufv-xvkzj-pe5w4-do4ig-iatdu-7j7ke-cxjer-qqoir-go27i-tae
+        - principal: xvfo2-6jufv-xvkzj-pe5w4-do4ig-iatdu-7j7ke-cxjer-qqoir-go27i-tae
           stake: 3540.393 tokens
           memo: preswap68
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: yh6dk-6v5qv-42xyz-yjrqf-shoj4-wrlyh-6sdgo-5rebe-3gcbp-4c43b-qqe
+        - principal: yh6dk-6v5qv-42xyz-yjrqf-shoj4-wrlyh-6sdgo-5rebe-3gcbp-4c43b-qqe
           stake: 836.724 tokens
           memo: preswap69
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: ynrus-kahov-2gbya-nsb37-qj56o-dfq3i-ojrxs-ezv2f-sjfwg-4urfh-aqe
+        - principal: ynrus-kahov-2gbya-nsb37-qj56o-dfq3i-ojrxs-ezv2f-sjfwg-4urfh-aqe
           stake: 81.622 tokens
           memo: preswap70
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: zeukl-vls3q-3s2rr-2u5ni-3jnfs-zuswb-vvzew-tridf-o7lf6-ernj2-bqe
+        - principal: zeukl-vls3q-3s2rr-2u5ni-3jnfs-zuswb-vvzew-tridf-o7lf6-ernj2-bqe
           stake: 321.854 tokens
           memo: preswap71
           dissolve_delay: 0
           vesting_period: 0
 
-          - principal: zp44o-gi6or-cs34n-dpevy-f4knm-vz5sb-5hbht-hsef6-xb7ij-jtuzq-iqe
+        - principal: zp44o-gi6or-cs34n-dpevy-f4knm-vz5sb-5hbht-hsef6-xb7ij-jtuzq-iqe
           stake: 37978.693 tokens
           memo: preswap72
           dissolve_delay: 0
@@ -855,41 +851,60 @@ Distribution:
 
         treasury: 3_679_703 tokens
 
-
         swap: 2_049_666 tokens
 
-
     total: 7_777_777 tokens
-
 
 Swap:
 
     minimum_participants: 20
 
-
     minimum_direct_participation_icp: 100_000 tokens
-
 
     maximum_direct_participation_icp: 500_000 tokens
 
-
-    minimum_participant_icp:    1 token
-
+    minimum_participant_icp: 1 token
 
     maximum_participant_icp: 200_000 tokens
 
+  confirmation_text: >
+      I confirm my understanding of the responsibilities and risks
+      associated with participating in this token swap and that I'm
+      not resident of one of the sanctioned countries listed below.
 
     restricted_countries:
-        - AQ  # Antarctica
-
+        - AF # AFGHANISTAN
+        - BY # BELARUS
+        - BA # BOSNIA AND HERZEGOVINA
+        - BI # BURUNDI
+        - CF # CENTRAL AFRICAN REPUBLIC
+        - KP # NORTH KOREA
+        - CD # DEMOCRATIC REPUBLIC OF THE CONGO
+        - IR # IRAN
+        - IQ # IRAQ
+        - LB # LEBANON
+        - LY # LIBYA
+        - ML # MALI
+        - ME # MONTENEGRO
+        - MM # MYANMAR
+        - NI # NICARAGUA
+        - RU # RUSSIA
+        - RS # SERBIA
+        - SO # SOMALIA
+        - SD # SUDAN
+        - SY # SYRIA
+        - UA # UKRAINE
+        - VE # VENEZUELA
+        - YE # YEMEN
+        - ZW # ZIMBABWE        
 
     VestingSchedule:
 
         events: 5
 
-
         interval: 1 week
 
+    start_time: 20:00 UTC        
 
     duration: 7 days
 
