@@ -864,7 +864,7 @@ Distribution:
 
 Swap:
 
-    minimum_participants: 20
+    minimum_participants: 10
 
     minimum_direct_participation_icp: 100_000 tokens
 
