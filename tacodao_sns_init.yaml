@@ -33,11 +33,11 @@ NnsProposal:
         * Tokens Distributed to Participants 2_049_666 TACO
         * Tokens for developers & seed 2_048_408 TACO
         * ICP to raise min: 100_000 ICP
-        * ICP to raise max: 500_000 ICP
+        * ICP to raise max: 1_000_000 ICP
         * Neuron fund participating - matched funding
-        * Min number of tokens per contributor: 1 ICP
-        * Max number of tokens per contributor: 200_000 ICP
-        * Min number of participants: 20
+        * Min number of tokens per contributor: 7 ICP
+        * Max number of tokens per contributor: 100_000 ICP
+        * Min number of participants: 10
         * Min dissolve delay: 1 week
         * Max dissolve delay: 1 month
         * Voting rewards: 0%
